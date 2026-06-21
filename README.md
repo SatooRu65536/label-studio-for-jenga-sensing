@@ -28,7 +28,7 @@ pip install -r requirements.txt
 `Labeling Setup` タブを選択し，`Custom Template` を押下．
 ![](./images/labeling-setup.png)
 
-![./labeling-interface.xml](./labeling-interface.xml) をコード欄に入力．
+[./labeling-interface.xml](./labeling-interface.xml) をコード欄に入力．
 
 `Data Import` タブを選択し，ラベリング対象となる `data/*.json` を全てドラッグドロップする．
 ![](./images/data-import.png)
@@ -36,6 +36,29 @@ pip install -r requirements.txt
 `Save` を押下．
 後はいい感じに．
 
+
+# センシングデータの準備
+`data` フォルダ内にデータを配置．
+フォルダは複数階層に入れ子になって良い．
+ファイル名は `heartbeat_raw.csv` と `video.mp4` とすること．
+
+```
+./data
+├── game_type_a
+│   ├── game_1
+│   │   ├── heartbeat_raw.csv
+│   │   └── video.mp4
+│   └── game_2
+│       ├── heartbeat_raw.csv
+│       └── video.mp4
+└── game_type_b
+    ├── game_1
+    │   ├── heartbeat_raw.csv
+    │   └── video.mp4
+    └── game_2
+        ├── heartbeat_raw.csv
+        └── video.mp4
+```
 
 # 実行
 ## Label Studio の起動
