@@ -8,6 +8,15 @@
         sync="ts"
     />
 
+    <TimeSeriesLabels name="behavior" toName="ts">
+        <Label value="Label A" />
+        <Label value="Label B" />
+        <Label value="Label C" />
+        <Label value="Label D" />
+        <Label value="Label E" />
+        <Label value="Other" />
+    </TimeSeriesLabels>
+
     <TimeSeries
         name="ts"
         value="$timeseries"
@@ -22,13 +31,4 @@
         <Channel column="player_3" />
         <Channel column="player_4" />
     </TimeSeries>
-
-    <TimeSeriesLabels name="behavior" toName="ts">
-        <Label value="Walking" />
-        <Label value="Running" />
-        <Label value="Standing" />
-        <Label value="Sitting" />
-        <Label value="Talking" />
-        <Label value="Other" />
-    </TimeSeriesLabels>
 </View>
