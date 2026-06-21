@@ -1,0 +1,34 @@
+<!-- Label Studio のプロジェクト設定の Labeling Interface -->
+<View>
+    <Header value="Video + Sensor Annotation" />
+
+    <Video
+        name="video"
+        value="$video"
+        sync="ts"
+    />
+
+    <TimeSeries
+        name="ts"
+        value="$timeseries"
+        valueType="url"
+        timeColumn="timestamp"
+        sync="video"
+        fixedScale="true"
+        height="250"
+    >
+        <Channel column="player_1" />
+        <Channel column="player_2" />
+        <Channel column="player_3" />
+        <Channel column="player_4" />
+    </TimeSeries>
+
+    <TimeSeriesLabels name="behavior" toName="ts">
+        <Label value="Walking" />
+        <Label value="Running" />
+        <Label value="Standing" />
+        <Label value="Sitting" />
+        <Label value="Talking" />
+        <Label value="Other" />
+    </TimeSeriesLabels>
+</View>
