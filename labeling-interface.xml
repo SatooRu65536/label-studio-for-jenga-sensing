@@ -26,9 +26,11 @@
         fixedScale="true"
         height="250"
     >
-        <Channel column="player_1" />
-        <Channel column="player_2" />
-        <Channel column="player_3" />
-        <Channel column="player_4" />
+        <MultiChannel>
+            <Channel column="player_1" />
+            <Channel column="player_2" />
+            <Channel column="player_3" />
+            <Channel column="player_4" />
+        </MultiChannel>
     </TimeSeries>
 </View>
